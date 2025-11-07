@@ -1,0 +1,12 @@
+site_name: CampusConnect Functional Documentation
+theme:
+  name: material
+nav:
+  - Overview: index.md
+  - Functional Use Cases: use_cases.md
+  - Business Use Cases: business_useCases.md
+  - Modules: modules.md
+  - Architecture: architecture.md
+ 
+plugins:
+  - mermaid2

@@ -1,0 +1,909 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="use_cases/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>CampusConnect Functional Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#campusconnect-college-event-club-portal" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="CampusConnect Functional Documentation" class="md-header__button md-logo" aria-label="CampusConnect Functional Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CampusConnect Functional Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="CampusConnect Functional Documentation" class="md-nav__button md-logo" aria-label="CampusConnect Functional Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CampusConnect Functional Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Goals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-centralize-all-campus-event-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Centralize All Campus Event Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-enable-role-based-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Enable Role-Based Functionality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stakeholders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stakeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-super-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Optional) Super Admins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Technology Stack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Core Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      REST API Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Outcome
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expected Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. For Students:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-for-club-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. For Club Admins:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-the-institution" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. For the Institution:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="use_cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Functional Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="business_useCases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Business Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Goals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Goals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-centralize-all-campus-event-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Centralize All Campus Event Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-enable-role-based-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Enable Role-Based Functionality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakeholders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stakeholders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stakeholders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Students
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional-super-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      (Optional) Super Admins
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scope
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scope">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Technology Stack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-core-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Core Features
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      REST API Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expected-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expected Outcome
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Expected Outcome">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. For Students:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-for-club-admins" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. For Club Admins:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for-the-institution" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. For the Institution:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="campusconnect-college-event-club-portal">CampusConnect – College Event &amp; Club Portal</h1>
+<h2 id="overview">Overview</h2>
+<p><strong>CampusConnect</strong> is an innovative <strong>EdTech web platform</strong> designed to simplify the entire process of <strong>college club and event management</strong>.<br />
+It serves as a <strong>central hub</strong> for students and  faculty to participate in college activities.</p>
+<p>The platform enables:
+- <strong>Students</strong> to explore and register for events across multiple events.
+- <strong>Admins</strong> to create, update, and manage their  events easily.</p>
+<hr />
+<h2 id="key-goals">Key Goals</h2>
+<h3 id="1-centralize-all-campus-event-information">1. Centralize All Campus Event Information</h3>
+<ul>
+<li>All upcoming, ongoing, and past events are stored in a <strong>single portal</strong>.  </li>
+<li>Students can browse through events by eliminating the need for multiple WhatsApp groups, posters, or manual announcements.</li>
+<li>This helps in <strong>organizing college activities efficiently</strong> and improves visibility across departments.</li>
+</ul>
+<h3 id="2-enable-role-based-functionality">2. Enable Role-Based Functionality</h3>
+<ul>
+<li>The system defines clear <strong>roles and permissions</strong>:</li>
+<li><strong>Students:</strong> Can view, register, and participate in events.</li>
+<li><strong>Admins:</strong> Can create, edit, or delete events.</li>
+<li><strong>Super Admins (optional):</strong> Oversee all clubs, manage user roles, and handle authentication.</li>
+</ul>
+<hr />
+<h2 id="stakeholders">Stakeholders</h2>
+<h3 id="students">Students</h3>
+<ul>
+<li>Explore various college clubs and their activities.</li>
+<li>View detailed event descriptions, dates, and registration requirements.</li>
+<li>Register for events directly through the portal.</li>
+<li>Track participation history and receive event updates or reminders.</li>
+</ul>
+<h3 id="admins">Admins</h3>
+<ul>
+<li>Create, edit, and manage events hosted by them.</li>
+<li>Handle event registrations and view participant details.</li>
+<li>Communicate updates and announcements to registered students.</li>
+<li>Analyze event participation trends for better engagement in future events.</li>
+</ul>
+<h3 id="optional-super-admins">(Optional) Super Admins</h3>
+<ul>
+<li>Manage the entire platform’s configuration.</li>
+<li>Approve or suspend clubs and events.</li>
+<li>Monitor analytics for platform usage, event success, and student involvement.</li>
+</ul>
+<hr />
+<h2 id="scope">Scope</h2>
+<h3 id="1-technology-stack">1. Technology Stack</h3>
+<ul>
+<li><strong>Backend Framework:</strong> Django (for admin panel and backend logic)</li>
+<li><strong>API Development:</strong> Django REST Framework (DRF)</li>
+<li><strong>Database:</strong> PostgreSQL (for relational data storage)</li>
+<li><strong>Frontend:</strong> HTML, CSS, Bootstrap</li>
+<li><strong>Authentication:</strong> JWT (JSON Web Token) for secure login and access control</li>
+</ul>
+<h3 id="2-core-features">2. Core Features</h3>
+<ul>
+<li>User registration and login system (JWT-based authentication)</li>
+<li>Event creation and management by club admins</li>
+<li>Event registration and tracking for students</li>
+<li>RESTful API endpoints to support web and mobile platforms</li>
+<li>Role based access permissions (Student/Admin)</li>
+</ul>
+<hr />
+<h2 id="authentication-system">Authentication System</h2>
+<p>CampusConnect uses <strong>JWT-based authentication</strong> to ensure a secure login and access management process:
+- <strong>Signup/Login APIs:</strong> Allow users to authenticate using email and password.
+- <strong>Access Token:</strong> Grants temporary access for authorized actions.
+- <strong>Refresh Token:</strong> Generates new access tokens without re-login.
+- <strong>Role-based permissions:</strong> Ensure that only authorized users can perform admin operations.</p>
+<p>This mechanism enhances <strong>data security</strong>, prevents unauthorized actions, and makes API integration seamless across web and mobile platforms.</p>
+<hr />
+<h2 id="rest-api-integration">REST API Integration</h2>
+<p>The backend provides well-structured RESTful APIs, such as:</p>
+<table>
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/api/register/</code></td>
+<td>POST</td>
+<td>Register a new user (student or admin)</td>
+</tr>
+<tr>
+<td><code>/api/login/</code></td>
+<td>POST</td>
+<td>Authenticate user and generate JWT token</td>
+</tr>
+<tr>
+<td><code>/api/events/</code></td>
+<td>GET</td>
+<td>View all available events</td>
+</tr>
+<tr>
+<td><code>/api/events/&lt;id&gt;/</code></td>
+<td>GET</td>
+<td>Retrieve event details</td>
+</tr>
+<tr>
+<td><code>/api/events/create/</code></td>
+<td>POST</td>
+<td>Create a new event (admin only)</td>
+</tr>
+<tr>
+<td><code>/api/events/&lt;id&gt;/register/</code></td>
+<td>POST</td>
+<td>Register a student for a specific event</td>
+</tr>
+</tbody>
+</table>
+<p>These APIs can later be consumed by a <strong>mobile app</strong> or <strong>React frontend</strong> for enhanced interactivity.</p>
+<hr />
+<h2 id="expected-outcome">Expected Outcome</h2>
+<p>By the end of this project, the CampusConnect platform will deliver the following outcomes:</p>
+<h3 id="1-for-students">1. For Students:</h3>
+<ul>
+<li>A single portal to <strong>explore, register, and participate</strong> in events.</li>
+<li>Access to <strong>event history</strong>, participation records, and notifications.</li>
+<li>Improved engagement with college communities and clubs.</li>
+</ul>
+<h3 id="2-for-club-admins">2. For Club Admins:</h3>
+<ul>
+<li>A <strong>streamlined system</strong> to manage events, registrations, and attendance.</li>
+<li>Reduced manual workload and communication chaos.</li>
+<li>Improved analytics on participation trends.</li>
+</ul>
+<h3 id="3-for-the-institution">3. For the Institution:</h3>
+<ul>
+<li>Transparent and digitalized event management.</li>
+<li>Enhanced collaboration and participation culture.</li>
+<li>Possibility of extending the system to include <strong>AI-driven event suggestions</strong> or <strong>mobile app integration</strong>.</li>
+</ul>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p><strong>CampusConnect</strong> bridges the gap between students and college clubs by bringing all event-related activities into one digital ecosystem.<br />
+Its modular design, secure authentication, and API-driven structure make it a <strong>future-ready platform</strong> capable of scaling across web and mobile environments.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
