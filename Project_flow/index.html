@@ -1,0 +1,945 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../architecture/">
+      
+      
+        <link rel="next" href="../er_diagram/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Project Flow - CampusConnect Functional Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#campusconnect-project-flow-specs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CampusConnect Functional Documentation" class="md-header__button md-logo" aria-label="CampusConnect Functional Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CampusConnect Functional Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project Flow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CampusConnect Functional Documentation" class="md-nav__button md-logo" aria-label="CampusConnect Functional Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CampusConnect Functional Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Functional Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business_useCases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Business Use Cases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modules
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Project Flow
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Flow
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#student-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-student-signup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Student Signup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-student-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Student Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-student-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Student Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-register-for-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Register for Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-unregister-from-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Unregister from Event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Admin Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#admin-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-dashboard-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Dashboard Sections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-event-creation-flow-with-validations" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADMIN: Event Creation Flow (With Validations)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-delete-event-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADMIN: Delete Event Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homepage-flow-before-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homepage Flow (Before Login)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Rules
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Database Schema
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Database Schema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../er_diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ER Diagram
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#student-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Student Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Student Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-student-signup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Student Signup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-student-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Student Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-student-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Student Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-register-for-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Register for Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-unregister-from-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Unregister from Event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Admin Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#admin-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-dashboard-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admin Dashboard Sections
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-event-creation-flow-with-validations" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADMIN: Event Creation Flow (With Validations)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin-delete-event-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADMIN: Delete Event Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homepage-flow-before-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Homepage Flow (Before Login)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Validation Rules
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="campusconnect-project-flow-specs">CampusConnect — Project Flow &amp; Specs</h1>
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li>
+<p><a href="#overview">Overview</a></p>
+</li>
+<li>
+<p><a href="#student-flow">Student Flow</a></p>
+</li>
+<li><a href="#admin-flow">Admin Flow</a></li>
+<li><a href="#homepage-flow-before-login">Homepage Flow (Before Login)</a></li>
+<li><a href="#database-schema">Database Schema</a></li>
+<li><a href="#validation-rules--advanced-logic">Validation Rules &amp; Advanced Logic</a></li>
+</ol>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>CampusConnect is a college event management system with three roles:</p>
+<ul>
+<li><strong>Super Admin</strong> — manages admin accounts.</li>
+<li><strong>Admin</strong> — creates/manages events.</li>
+<li><strong>Student</strong> — registers/unregisters for events and views events.</li>
+</ul>
+<p>This document captures the full system flow including the updated validations you requested (no two events at same date-time &amp; location, seats required, dynamic seat updates, delete flow, etc.).</p>
+<hr />
+<h2 id="student-flow">Student Flow</h2>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li>Signup, login</li>
+<li>View events (upcoming, past, registered)</li>
+<li>Register / Unregister</li>
+<li>Track registrations</li>
+</ul>
+<h3 id="1-student-signup">1. Student Signup</h3>
+<ul>
+<li>Student opens homepage → Signup</li>
+<li>Enter: name, email, password</li>
+<li>System validates email uniqueness</li>
+<li>Account created → redirect to login</li>
+</ul>
+<h3 id="2-student-login">2. Student Login</h3>
+<ul>
+<li>Login with email + password</li>
+<li>System authenticates and redirects to dashboard</li>
+</ul>
+<h3 id="3-student-dashboard">3. Student Dashboard</h3>
+<p>Dashboard shows:
+- Upcoming Events
+- Past Events
+- Events the student has registered for
+- Available seats (calculated)
+- Register / Unregister actions</p>
+<p>Per event shown:
+- Title
+- Date / Time
+- Location
+- Available seats (capacity - registered_count)
+- Status: <code>Open</code> / <code>Full</code> / <code>Past</code></p>
+<h3 id="4-register-for-event">4. Register for Event</h3>
+<p><strong>Validation checks (on attempt to register):</strong>
+- Event date/time must be &gt;= today
+- Seats available &gt; 0
+- Student not already registered for the event</p>
+<p><strong>On success:</strong>
+- Add a row to <code>REGISTRATIONS</code> table
+- Update available seats (derived: capacity - registrations)
+- Redirect student to dashboard (confirmation displayed)</p>
+<h3 id="5-unregister-from-event">5. Unregister from Event</h3>
+<ul>
+<li>Student clicks <code>Unregister</code> → confirmation popup</li>
+<li>On confirm: delete registration row</li>
+<li>Seat count adjusts automatically (derived value changes)</li>
+</ul>
+<hr />
+<h2 id="admin-flow">Admin Flow</h2>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li>Create, edit, delete events</li>
+<li>View registered students per event</li>
+<li>See all events they created and system events</li>
+</ul>
+<h3 id="admin-login">Admin Login</h3>
+<ul>
+<li>Admin logs in using credentials sent by Super Admin</li>
+<li>Admin Dashboard loads</li>
+</ul>
+<h3 id="admin-dashboard-sections">Admin Dashboard Sections</h3>
+<ol>
+<li>View All Events</li>
+<li>View Events Created by Admin</li>
+<li>Create New Event</li>
+<li>Delete Event</li>
+<li>View Registered Students per Event</li>
+</ol>
+<h3 id="admin-event-creation-flow-with-validations">ADMIN: Event Creation Flow (With Validations)</h3>
+<p><strong>Event fields</strong>
+- Title
+- Description
+- Date &amp; Time
+- Location
+- Number of seats (capacity)
+- Created by (auto-filled)</p>
+<p><strong>Critical Validations</strong></p>
+<ul>
+<li><strong>Validation 1 — No two events at same date-time &amp; same location</strong></li>
+<li>Before saving, check existing events where <code>existing_event.datetime == new_event.datetime &amp;&amp; existing_event.location == new_event.location</code>.</li>
+<li>
+<p>If true, reject with: <strong>"Another event is already scheduled at this location and time."</strong></p>
+</li>
+<li>
+<p><strong>Validation 2 — Number of seats required</strong></p>
+</li>
+<li>
+<p><code>capacity</code> must be integer &gt; 0. Otherwise: <strong>"Seat count must be positive."</strong></p>
+</li>
+<li>
+<p><strong>Validation 3 — Event date must be in the future</strong></p>
+</li>
+<li>If <code>event_date &lt; today</code> then reject with an appropriate error message.</li>
+</ul>
+<p><strong>On passing validations</strong>
+- Save the event record with <code>capacity</code>.
+- Event appears in student and admin lists.</p>
+<h3 id="admin-delete-event-flow">ADMIN: Delete Event Flow</h3>
+<ul>
+<li>Admin clicks <code>Delete</code> → confirmation requested</li>
+<li>If confirmed:</li>
+<li>Mark event as deleted (soft-delete) or remove fully depending on policy</li>
+<li>Set <code>deleted_by = admin.username</code></li>
+<li>Set <code>deleted_at = timestamp</code></li>
+<li>Remove or invalidate all <code>REGISTRATIONS</code> for that event</li>
+<li>Event no longer visible on student dashboard</li>
+</ul>
+<hr />
+<h2 id="homepage-flow-before-login">Homepage Flow (Before Login)</h2>
+<p>Visitors see:
+- Upcoming events
+- Past events
+- Links: Login (Student) / Login (Admin) / Signup</p>
+<hr />
+<h2 id="validation-rules">Validation Rules</h2>
+<ul>
+<li><strong>Seat Handling</strong></li>
+<li>Register: <code>available_seats</code> computed dynamically (capacity - registrations)</li>
+<li>Unregister: registration removed → available seats increase</li>
+<li>
+<p>Event Delete: delete or mark registrations invalid</p>
+</li>
+<li>
+<p><strong>Event Visibility</strong></p>
+</li>
+<li>Past events: visible but cannot register</li>
+<li>Upcoming events: register allowed</li>
+<li>
+<p>Full events: show status <code>FULL</code></p>
+</li>
+<li>
+<p><strong>Concurrency Considerations</strong></p>
+</li>
+<li>Use a DB transaction + row-level locking when decrementing seats or inserting registrations to avoid race conditions.</li>
+<li>Option: store <code>remaining_seats</code> in <code>events</code> and update with <code>UPDATE events SET remaining_seats = remaining_seats - 1 WHERE id = X AND remaining_seats &gt; 0</code> then check affected rows to confirm success.</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
