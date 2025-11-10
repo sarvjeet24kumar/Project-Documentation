@@ -1,7 +1,7 @@
 ```mermaid
 erDiagram
 
-    USER {
+    users {
         int id PK
         varchar name
         varchar email
@@ -10,11 +10,11 @@ erDiagram
         timestamp created_at
     }
 
-    EVENT {
+    events {
         int id PK
         varchar title
         text description
-        timestamp event_datetime
+        timestamp events_datetime
         varchar location
         int seats
         varchar deleted_by
@@ -23,16 +23,16 @@ erDiagram
         timestamp created_at
     }
 
-    REGISTRATION {
+    registrations {
         int id PK
-        int event_id FK
+        int events_id FK
         int student_id FK
         timestamp registered_at
         varchar status
     }
 
-    USER ||--o{ EVENT : "creates"
-    USER ||--o{ REGISTRATION : "registers"
-    EVENT ||--o{ REGISTRATION : "has"
+    users ||--o{ events : "creates"
+    users ||--o{ registrations : "registers"
+    events ||--o{ registrations : "has"
 
 ```
