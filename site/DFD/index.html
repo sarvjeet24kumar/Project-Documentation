@@ -5,10 +5,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../Project_flow/" rel="prev"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
-<title>ER Diagram - CampusConnect Functional Documentation</title>
+<title>DFD - CampusConnect Functional Documentation</title>
 <link href="../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -41,7 +40,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              ER Diagram
+              DFD
             
           </span>
 </div>
@@ -112,8 +111,8 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
 <span class="md-ellipsis">
     Database Schema
@@ -121,15 +120,14 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_7">
 <span class="md-nav__icon md-icon"></span>
             Database Schema
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../er_diagram/">
 <span class="md-ellipsis">
     ER Diagram
     
@@ -154,42 +152,37 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>ER Diagram</h1>
-<div class="mermaid">erDiagram
+<h1>DFD</h1>
+<div class="mermaid">flowchart TD
 
-    USER {
-        int id PK
-        varchar name
-        varchar email
-        varchar password_hash
-        varchar role
-        timestamp created_at
-    }
 
-    EVENT {
-        int id PK
-        varchar title
-        text description
-        timestamp event_datetime
-        varchar location
-        int seats
-        varchar deleted_by
-        timestamp deleted_at
-        int created_by FK
-        timestamp created_at
-    }
 
-    REGISTRATION {
-        int id PK
-        int event_id FK
-        int student_id FK
-        timestamp registered_at
-        varchar status
-    }
+    subgraph Student Actions
+        S1[Signup] --&gt; S2[Login]
+        S2 --&gt; S3[View Events]
+        S3 --&gt; S4[Register for Event]
+        S3 --&gt; S5[Unregister Event]
+    end
 
-    USER ||--o{ EVENT : "creates"
-    USER ||--o{ REGISTRATION : "registers"
-    EVENT ||--o{ REGISTRATION : "has"
+    subgraph Admin Actions
+        A1[Login as Admin] --&gt; A2[View Events]
+        A2 --&gt; A3[Create Event]
+        A2 --&gt; A4[Delete Event]
+        A2 --&gt; A5[View Registered Students]
+    end
+
+    subgraph Super Admin
+        SA1[Login] --&gt; SA2[Create Admin]
+    end
+
+    S4 --&gt; DB[(Database)]
+    S5 --&gt; DB
+    A3 --&gt; DB
+    A4 --&gt; DB
+    A5 --&gt; DB
+    SA2 --&gt; DB
+
+
 
 </div>
 </article>
