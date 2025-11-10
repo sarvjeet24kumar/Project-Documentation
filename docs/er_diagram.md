@@ -1,11 +1,12 @@
 ```mermaid
 erDiagram
+
     USER {
         int id PK
-        varchar username
+        varchar name
         varchar email
         varchar password_hash
-        varchar role  "student or admin"
+        varchar role
         timestamp created_at
     }
 
@@ -15,6 +16,9 @@ erDiagram
         text description
         timestamp event_datetime
         varchar location
+        int seats
+        varchar deleted_by
+        timestamp deleted_at
         int created_by FK
         timestamp created_at
     }
@@ -24,11 +28,11 @@ erDiagram
         int event_id FK
         int student_id FK
         timestamp registered_at
-        varchar status  "registered / cancelled"
+        varchar status
     }
 
-    %% Relationships
-    USER ||--o{ EVENT : creates
-    USER ||--o{ REGISTRATION : registers
-    EVENT ||--o{ REGISTRATION : has
+    USER ||--o{ EVENT : "creates"
+    USER ||--o{ REGISTRATION : "registers"
+    EVENT ||--o{ REGISTRATION : "has"
+
 ```

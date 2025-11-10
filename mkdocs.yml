@@ -13,6 +13,7 @@ nav:
   - Business Use Cases: business_useCases.md
   - Modules: modules.md
   - Architecture: architecture.md
+  - Project Flow : Project_flow.md
   - Database Schema:
       - ER Diagram: er_diagram.md
       

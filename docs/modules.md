@@ -5,10 +5,6 @@
 - Role-based access: Student / Admin.
 - Password hashing and validation.
 
-<!-- ## 2. Club Module
-- Create and manage clubs.
-- Admin can edit or delete their own clubs.
-- Students can view all clubs. -->
 
 ## 2. Event Module
 - CRUD operations for events.
@@ -22,4 +18,4 @@
 
 ## 4. Dashboard Module
 - Admin Dashboard: Upcoming events, participants.
-- Student Dashboard: Registered events, joined clubs.
+- Student Dashboard: Upcoming events, Registered events.
