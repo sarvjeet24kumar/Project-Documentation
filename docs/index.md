@@ -23,7 +23,6 @@ The platform enables:
 - The system defines clear **roles and permissions**:
   - **Students:** Can view, register, and participate in events.
   - **Admins:** Can create, edit, or delete events.
-  - **Super Admins (optional):** Oversee all clubs, manage user roles, and handle authentication.
 
 ---
 
@@ -39,7 +38,7 @@ The platform enables:
 - Create, edit, and manage events hosted by them.
 - Handle event registrations and view participant details.
 - Communicate updates and announcements to registered students.
-- Analyze event participation trends for better engagement in future events.
+
 
 ###  (Optional) Super Admins
 - Manage the entire platform’s configuration.
@@ -112,7 +111,7 @@ By the end of this project, the CampusConnect platform will deliver the followin
 ### 3. For the Institution:
 - Transparent and digitalized event management.
 - Enhanced collaboration and participation culture.
-- Possibility of extending the system to include **AI-driven event suggestions** or **mobile app integration**.
+
 
 ---
 
