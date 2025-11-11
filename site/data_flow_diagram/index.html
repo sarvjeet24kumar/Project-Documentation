@@ -5,6 +5,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../Project_flow/" rel="prev"/>
+<link href="../structural_diagram/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
 <title>DFD - CampusConnect Functional Documentation</title>
@@ -111,8 +113,9 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../data_flow_diagram/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     DFD
     
@@ -171,35 +174,62 @@
 <h1>DFD</h1>
 <div class="mermaid">flowchart TD
 
+    %% === Users ===
+    ST[Student]
+    AD[Admin]
+    SA[Super Admin]
 
-
-    subgraph Student Actions
-        S1[Signup] --&gt; S2[Login]
-        S2 --&gt; S3[View Events]
-        S3 --&gt; S4[Register for Event]
-        S3 --&gt; S5[Unregister Event]
+    %% === Auth Module ===
+    subgraph Authentication
+        Signup[Student Signup]
+        Login[Login All Roles]
     end
 
-    subgraph Admin Actions
-        A1[Login as Admin] --&gt; A2[View Events]
-        A2 --&gt; A3[Create Event]
-        A2 --&gt; A4[Delete Event]
-        A2 --&gt; A5[View Registered Students]
+    %% === Event Management ===
+    subgraph Event Management
+        CreateEvent[Create Event]
+        EditEvent[Edit/Delete Event]
+        ListEvents[View Events]
+        RegisterEvent[Register/Unregister]
+        SeatUpdate[Seat Availability Update]
     end
 
-    subgraph Super Admin
-        SA1[Login] --&gt; SA2[Create Admin]
-    end
-
-    S4 --&gt; DB[(Database)]
-    S5 --&gt; DB
-    A3 --&gt; DB
-    A4 --&gt; DB
-    A5 --&gt; DB
-    SA2 --&gt; DB
+    %% === Database ===
+    DB[PostgreSQL Database]
 
 
+    %% === Student Flow ===
+    ST --&gt; Signup
+    ST --&gt; Login
+    ST --&gt; ListEvents
+    ST --&gt; RegisterEvent
+    RegisterEvent --&gt; SeatUpdate
+    SeatUpdate --&gt; DB
+    RegisterEvent --&gt; DB
+    Signup --&gt; DB
+    DB --&gt; Login
 
+    %% === Admin Flow ===
+    AD --&gt; Login
+    AD --&gt; CreateEvent
+    AD --&gt; EditEvent
+    AD --&gt; ListEvents
+    CreateEvent --&gt; DB
+    EditEvent --&gt; DB
+
+    %% === Super Admin Flow ===
+    SA --&gt; Login
+    SA --&gt; CreateAdmin[Create Admin]
+    CreateAdmin --&gt; DB
+
+    %% Styling
+    classDef users fill:#e3f2fd,stroke:#1e88e5,color:#000,stroke-width:2px;
+    classDef process fill:#f3e5f5,stroke:#7b1fa2,color:#000;
+    classDef storage fill:#e8f5e9,stroke:#388e3c,color:#000,stroke-width:2px;
+
+    class ST,AD,SA users
+    class Signup,Login,CreateEvent,EditEvent,ListEvents,RegisterEvent,SeatUpdate,CreateAdmin process
+    class DB,S3 storage
 </div>
 </article>
 </div>

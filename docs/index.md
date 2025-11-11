@@ -1,8 +1,8 @@
-#  CampusConnect – College Event & Club Portal
+#  CampusConnect – College Event Portal
 
 ##  Overview
 
-**CampusConnect** is an innovative **EdTech web platform** designed to simplify the entire process of **college club and event management**.  
+**CampusConnect** is an innovative **EdTech web platform** designed to simplify the entire process of **college event management**.  
 It serves as a **central hub** for students and  faculty to participate in college activities.
 
 The platform enables:
@@ -29,7 +29,7 @@ The platform enables:
 ##  Stakeholders
 
 ###  Students
-- Explore various college clubs and their activities.
+- Explore various college events.
 - View detailed event descriptions, dates, and registration requirements.
 - Register for events directly through the portal.
 - Track participation history and receive event updates or reminders.
@@ -38,12 +38,6 @@ The platform enables:
 - Create, edit, and manage events hosted by them.
 - Handle event registrations and view participant details.
 - Communicate updates and announcements to registered students.
-
-
-###  (Optional) Super Admins
-- Manage the entire platform’s configuration.
-- Approve or suspend clubs and events.
-- Monitor analytics for platform usage, event success, and student involvement.
 
 ---
 
@@ -58,7 +52,7 @@ The platform enables:
 
 ### 2. Core Features
 - User registration and login system (JWT-based authentication)
-- Event creation and management by club admins
+- Event creation and management by admins
 - Event registration and tracking for students
 - RESTful API endpoints to support web and mobile platforms
 - Role based access permissions (Student/Admin)
@@ -87,7 +81,7 @@ The backend provides well-structured RESTful APIs, such as:
 | `/api/login/` | POST | Authenticate user and generate JWT token |
 | `/api/events/` | GET | View all available events |
 | `/api/events/<id>/` | GET | Retrieve event details |
-| `/api/events/create/` | POST | Create a new event (admin only) |
+| `/api/events/` | POST | Create a new event (admin only) |
 | `/api/events/<id>/register/` | POST | Register a student for a specific event |
 
 These APIs can later be consumed by a **mobile app** or **React frontend** for enhanced interactivity.
@@ -101,9 +95,9 @@ By the end of this project, the CampusConnect platform will deliver the followin
 ### 1. For Students:
 - A single portal to **explore, register, and participate** in events.
 - Access to **event history**, participation records, and notifications.
-- Improved engagement with college communities and clubs.
+- Improved engagement with college communities .
 
-### 2. For Club Admins:
+### 2. For  Admins:
 - A **streamlined system** to manage events, registrations, and attendance.
 - Reduced manual workload and communication chaos.
 - Improved analytics on participation trends.
@@ -117,6 +111,6 @@ By the end of this project, the CampusConnect platform will deliver the followin
 
 ##  Conclusion
 
-**CampusConnect** bridges the gap between students and college clubs by bringing all event-related activities into one digital ecosystem.  
+**CampusConnect** bridges the gap between students and college  by bringing all event-related activities into one digital ecosystem.  
 Its modular design, secure authentication, and API-driven structure make it a **future-ready platform** capable of scaling across web and mobile environments.
 

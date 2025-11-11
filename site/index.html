@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#campusconnect-college-event-club-portal" class="md-skip">
+        <a href="#campusconnect-college-event-portal" class="md-skip">
           Skip to content
         </a>
       
@@ -271,15 +271,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#optional-super-admins" class="md-nav__link">
-    <span class="md-ellipsis">
-      (Optional) Super Admins
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -356,9 +347,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-for-club-admins" class="md-nav__link">
+  <a href="#2-for-admins" class="md-nav__link">
     <span class="md-ellipsis">
-      2. For Club Admins:
+      2. For Admins:
     </span>
   </a>
   
@@ -511,6 +502,50 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="data_flow_diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DFD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="structural_diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -520,10 +555,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   
@@ -536,8 +571,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Database Schema
           </label>
@@ -669,15 +704,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#optional-super-admins" class="md-nav__link">
-    <span class="md-ellipsis">
-      (Optional) Super Admins
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -754,9 +780,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-for-club-admins" class="md-nav__link">
+  <a href="#2-for-admins" class="md-nav__link">
     <span class="md-ellipsis">
-      2. For Club Admins:
+      2. For Admins:
     </span>
   </a>
   
@@ -801,9 +827,9 @@
 
 
 
-<h1 id="campusconnect-college-event-club-portal">CampusConnect – College Event &amp; Club Portal</h1>
+<h1 id="campusconnect-college-event-portal">CampusConnect – College Event Portal</h1>
 <h2 id="overview">Overview</h2>
-<p><strong>CampusConnect</strong> is an innovative <strong>EdTech web platform</strong> designed to simplify the entire process of <strong>college club and event management</strong>.<br />
+<p><strong>CampusConnect</strong> is an innovative <strong>EdTech web platform</strong> designed to simplify the entire process of <strong>college event management</strong>.<br />
 It serves as a <strong>central hub</strong> for students and  faculty to participate in college activities.</p>
 <p>The platform enables:
 - <strong>Students</strong> to explore and register for events across multiple events.
@@ -826,7 +852,7 @@ It serves as a <strong>central hub</strong> for students and  faculty to partici
 <h2 id="stakeholders">Stakeholders</h2>
 <h3 id="students">Students</h3>
 <ul>
-<li>Explore various college clubs and their activities.</li>
+<li>Explore various college events.</li>
 <li>View detailed event descriptions, dates, and registration requirements.</li>
 <li>Register for events directly through the portal.</li>
 <li>Track participation history and receive event updates or reminders.</li>
@@ -836,12 +862,6 @@ It serves as a <strong>central hub</strong> for students and  faculty to partici
 <li>Create, edit, and manage events hosted by them.</li>
 <li>Handle event registrations and view participant details.</li>
 <li>Communicate updates and announcements to registered students.</li>
-</ul>
-<h3 id="optional-super-admins">(Optional) Super Admins</h3>
-<ul>
-<li>Manage the entire platform’s configuration.</li>
-<li>Approve or suspend clubs and events.</li>
-<li>Monitor analytics for platform usage, event success, and student involvement.</li>
 </ul>
 <hr />
 <h2 id="scope">Scope</h2>
@@ -856,7 +876,7 @@ It serves as a <strong>central hub</strong> for students and  faculty to partici
 <h3 id="2-core-features">2. Core Features</h3>
 <ul>
 <li>User registration and login system (JWT-based authentication)</li>
-<li>Event creation and management by club admins</li>
+<li>Event creation and management by admins</li>
 <li>Event registration and tracking for students</li>
 <li>RESTful API endpoints to support web and mobile platforms</li>
 <li>Role based access permissions (Student/Admin)</li>
@@ -902,7 +922,7 @@ It serves as a <strong>central hub</strong> for students and  faculty to partici
 <td>Retrieve event details</td>
 </tr>
 <tr>
-<td><code>/api/events/create/</code></td>
+<td><code>/api/events/</code></td>
 <td>POST</td>
 <td>Create a new event (admin only)</td>
 </tr>
@@ -921,9 +941,9 @@ It serves as a <strong>central hub</strong> for students and  faculty to partici
 <ul>
 <li>A single portal to <strong>explore, register, and participate</strong> in events.</li>
 <li>Access to <strong>event history</strong>, participation records, and notifications.</li>
-<li>Improved engagement with college communities and clubs.</li>
+<li>Improved engagement with college communities .</li>
 </ul>
-<h3 id="2-for-club-admins">2. For Club Admins:</h3>
+<h3 id="2-for-admins">2. For  Admins:</h3>
 <ul>
 <li>A <strong>streamlined system</strong> to manage events, registrations, and attendance.</li>
 <li>Reduced manual workload and communication chaos.</li>
@@ -936,7 +956,7 @@ It serves as a <strong>central hub</strong> for students and  faculty to partici
 </ul>
 <hr />
 <h2 id="conclusion">Conclusion</h2>
-<p><strong>CampusConnect</strong> bridges the gap between students and college clubs by bringing all event-related activities into one digital ecosystem.<br />
+<p><strong>CampusConnect</strong> bridges the gap between students and college  by bringing all event-related activities into one digital ecosystem.<br />
 Its modular design, secure authentication, and API-driven structure make it a <strong>future-ready platform</strong> capable of scaling across web and mobile environments.</p>
 
 

@@ -163,10 +163,5 @@ Visitors see:
   - Past events: visible but cannot register
   - Upcoming events: register allowed
   - Full events: show status `FULL`
-
-- **Concurrency Considerations**
-  - Use a DB transaction + row-level locking when decrementing seats or inserting registrations to avoid race conditions.
-  - Option: store `remaining_seats` in `events` and update with `UPDATE events SET remaining_seats = remaining_seats - 1 WHERE id = X AND remaining_seats > 0` then check affected rows to confirm success.
-
 ---
 
