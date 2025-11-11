@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../Project_flow/" rel="prev"/>
+<link href="../structural_diagram/" rel="prev"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
 <title>ER Diagram - CampusConnect Functional Documentation</title>
@@ -112,17 +112,33 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../data_flow_diagram/">
+<span class="md-ellipsis">
+    DFD
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../structural_diagram/">
+<span class="md-ellipsis">
+    System architecture
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
 <span class="md-ellipsis">
     Database Schema
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_7">
+<nav aria-expanded="true" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
             Database Schema
           </label>
@@ -156,38 +172,71 @@
 <article class="md-content__inner md-typeset">
 <h1>ER Diagram</h1>
 <div class="mermaid">erDiagram
-
     users {
         int id PK
         varchar name
         varchar email
-        varchar password_hash
+        varchar password
+        timestamp created_at
+        timestamp updated_at
+        timestamp deleted_at
+    }
+
+    roles {
+        int id PK
         varchar role
         timestamp created_at
+        timestamp updated_at
+        timestamp deleted_at
+    }
+    users_roles{
+        int id PK
+        int user_id FK
+        int role_id FK
+        timestamp created_at
+        timestamp updated_at
+        timestamp deleted_at
     }
 
     events {
         int id PK
         varchar title
         text description
-        timestamp events_datetime
-        varchar location
+        timestamp start_time
+        timestamp end_time
+        int location_id FK
         int seats
-        varchar deleted_by
+        varchar deleted_by FK
         timestamp deleted_at
         int created_by FK
         timestamp created_at
+        timestamp updated_at
+    }
+    locations {
+        int id PK
+        enum location
+        int  capacity
+        timestamp created_at
+        timestamp updated_at
+        timestamp deleted_at
     }
 
     registrations {
         int id PK
         int events_id FK
         int student_id FK
-        timestamp registered_at
-        varchar status
+        enum status
+        timestamp created_at
+        timestamp updated_at
+        timestamp deleted_at
     }
 
     users ||--o{ events : "creates"
+    users }|--|{ users_roles : "many to many"
+    roles }|--|{ users_roles : "many to many"
+
+    locations ||--o{ events : "one to many"
+
     users ||--o{ registrations : "registers"
     events ||--o{ registrations : "has"
 

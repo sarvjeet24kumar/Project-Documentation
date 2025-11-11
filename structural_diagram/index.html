@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../business_useCases/">
+        <link rel="prev" href="../data_flow_diagram/">
       
       
-        <link rel="next" href="../architecture/">
+        <link rel="next" href="../er_diagram/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Modules - CampusConnect Functional Documentation</title>
+        <title>System architecture - CampusConnect Functional Documentation</title>
       
     
     
@@ -61,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#functional-modules" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modules
+              System architecture
             
           </span>
         </div>
@@ -217,32 +212,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Modules
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
         
   
   
@@ -253,62 +226,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-authentication-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Authentication Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-event-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Event Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-registration-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Registration Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-dashboard-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Dashboard Module
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -383,10 +300,17 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../structural_diagram/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -397,6 +321,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -486,52 +411,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-authentication-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Authentication Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-event-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Event Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-registration-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Registration Module
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-dashboard-module" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Dashboard Module
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -547,30 +426,9 @@
 
 
 
-<h1 id="functional-modules">Functional Modules</h1>
-<h2 id="1-authentication-module">1. Authentication Module</h2>
-<ul>
-<li>JWT-based login and registration.</li>
-<li>Role-based access: Student / Admin.</li>
-<li>Password hashing and validation.</li>
-</ul>
-<h2 id="2-event-module">2. Event Module</h2>
-<ul>
-<li>CRUD operations for events.</li>
-<li>Events linked to specific clubs.</li>
-<li>Validation for event dates and locations.</li>
-</ul>
-<h2 id="3-registration-module">3. Registration Module</h2>
-<ul>
-<li>Students register/unregister for events.</li>
-<li>Prevent duplicate registrations.</li>
-<li>Track registration timestamps.</li>
-</ul>
-<h2 id="4-dashboard-module">4. Dashboard Module</h2>
-<ul>
-<li>Admin Dashboard: Upcoming events, participants.</li>
-<li>Student Dashboard: Upcoming events, Registered events.</li>
-</ul>
+  <h1>System architecture</h1>
+
+<p><img alt="Structural Diagram" src="../images/image.png" /></p>
 
 
 

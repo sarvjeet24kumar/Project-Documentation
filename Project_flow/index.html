@@ -12,7 +12,7 @@
         <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../er_diagram/">
+        <link rel="next" href="../data_flow_diagram/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -474,6 +474,50 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../data_flow_diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DFD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structural_diagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    System architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -483,10 +527,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
   
@@ -499,8 +543,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Database Schema
           </label>
@@ -877,14 +921,7 @@
 </li>
 <li>Past events: visible but cannot register</li>
 <li>Upcoming events: register allowed</li>
-<li>
-<p>Full events: show status <code>FULL</code></p>
-</li>
-<li>
-<p><strong>Concurrency Considerations</strong></p>
-</li>
-<li>Use a DB transaction + row-level locking when decrementing seats or inserting registrations to avoid race conditions.</li>
-<li>Option: store <code>remaining_seats</code> in <code>events</code> and update with <code>UPDATE events SET remaining_seats = remaining_seats - 1 WHERE id = X AND remaining_seats &gt; 0</code> then check affected rows to confirm success.</li>
+<li>Full events: show status <code>FULL</code></li>
 </ul>
 <hr />
 
