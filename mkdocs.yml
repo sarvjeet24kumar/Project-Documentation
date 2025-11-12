@@ -18,6 +18,7 @@ nav:
   - System architecture : structural_diagram.md
   - Database Schema:
       - ER Diagram: er_diagram.md
+  - Test Case Documentations: Test_cases_document.md
       
 
 
