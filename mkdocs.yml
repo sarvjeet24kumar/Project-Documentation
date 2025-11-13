@@ -14,7 +14,7 @@ nav:
   - Modules: modules.md
   - Architecture: architecture.md
   - Project Flow : Project_flow.md
-  - DFD : data_flow_diagram.md
+  - DFD : DFD.md
   - System architecture : structural_diagram.md
   - Database Schema:
       - ER Diagram: er_diagram.md
