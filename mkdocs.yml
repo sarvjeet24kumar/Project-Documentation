@@ -18,7 +18,11 @@ nav:
   - System architecture : structural_diagram.md
   - Database Schema:
       - ER Diagram: er_diagram.md
-  - Test Case Documentations: Test_cases_document.md
+  - Test Case Documentations: 
+      - Signup Module: signup_test.md
+      - Login Module: login_test.md
+      - Test plan: test_plan.md
+
       
 
 
