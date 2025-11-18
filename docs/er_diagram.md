@@ -2,7 +2,8 @@
 erDiagram
     users {
         int id PK
-        varchar name
+        varchar first_name
+        varchar last_name
         varchar email
         varchar password
         timestamp created_at

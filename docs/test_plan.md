@@ -32,32 +32,26 @@ This test plan outlines the validation strategy for the Signup and Login modules
 
 ---
 
-## **6. Test Schedule**
-- Test Case Design: 13/11  
-- Test Execution: 
-
----
-
-## **7. Resources**
+## **6. Resources**
 - **Test Engineer:** Sarvjeet – Executes tests, reports defects.
 - **Developer:** Backend support for bug fixes.
 
 ---
 
-## **8. Risks & Mitigation**
+## **7. Risks & Mitigation**
 - **Risk:** Incorrect test data. **Mitigation:** Use clean test DB.
 - **Risk:** Browser inconsistency. **Mitigation:** Multi-browser checks.
 
 ---
 
-## **9. Deliverables**
+## **8. Deliverables**
 - Signup Test Cases (TC.1 – TC.12)  
 - Login Test Cases (TC.13 – TC.24)  
-- Defect Report
+
 
 ---
 
-## **10. Entry & Exit Criteria**
+## **9. Entry & Exit Criteria**
 **Entry:** Code ready, environment stable.  
-**Exit:** 95% test cases passed, no major defects.
+**Exit:** 75% test cases passed, no major defects.
 
