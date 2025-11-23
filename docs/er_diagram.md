@@ -16,7 +16,7 @@ erDiagram
         varchar role
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
+        
     }
     users_roles{
         int id PK
@@ -24,7 +24,6 @@ erDiagram
         int role_id FK
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
     }
 
     events {
@@ -47,7 +46,6 @@ erDiagram
         int  capacity
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
     }
 
     registrations {
@@ -57,7 +55,6 @@ erDiagram
         enum status
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
     }
 
     users ||--o{ events : "creates"

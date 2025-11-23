@@ -2,7 +2,7 @@ site_name: CampusConnect Functional Documentation
 theme:
   name: material
 
-features:
+  features:
     - content.code.copy
     - content.tabs.link
     - content.tooltips
@@ -12,21 +12,15 @@ nav:
   - Functional Use Cases: use_cases.md
   - Business Use Cases: business_useCases.md
   - Modules: modules.md
-  - Architecture: architecture.md
-  - Project Flow : Project_flow.md
-  - DFD : DFD.md
-  - System architecture : structural_diagram.md
+  - High Level Architecture: architecture.md
+  - Project Flow: Project_flow.md
+  - DFD: DFD.md
+  - System architecture: structural_diagram.md
   - Database Schema:
       - ER Diagram: er_diagram.md
-  - Test Case Documentations: 
+  - Test Case Documentations:
       - Signup Module: signup_test.md
       - Login Module: login_test.md
-      - Test plan: test_plan.md
 
-      
-
-
-
-  
 plugins:
   - mermaid2

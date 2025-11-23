@@ -8,7 +8,6 @@
 
 ## 2. Event Module
 - CRUD operations for events.
-- Events linked to specific clubs.
 - Validation for event dates and locations.
 
 ## 3. Registration Module

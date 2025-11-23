@@ -2,7 +2,7 @@
 
 ## Overview
 Business use cases represent the **organizational goals** and **value-added processes** achieved through CampusConnect.  
-They focus on *why* the system exists and *how* it improves college operations and engagement.
+They focus on why the system exists and how it improves college operations and engagement.
 
 ---
 
@@ -24,7 +24,7 @@ They focus on *why* the system exists and *how* it improves college operations a
 
 
 ##  Use Case 3: Simplifying  Administration
-**Goal:** Reduce manual management for club coordinators.  
+**Goal:** Reduce manual management for event organizer.  
 **Business Value:**
  Admins can easily manage events, participants, and schedules.
  Decreases paperwork and duplicate data entry.

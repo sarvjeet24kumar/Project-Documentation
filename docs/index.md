@@ -2,11 +2,13 @@
 
 ##  Overview
 
-**CampusConnect** is an innovative **EdTech web platform** designed to simplify the entire process of **college event management**.  
+**CampusConnect** is an innovative **Web Platform** designed to simplify the entire process of **college event management**.  
 It serves as a **central hub** for students and  faculty to participate in college activities.
 
 The platform enables:
+
 - **Students** to explore and register for events across multiple events.
+
 - **Admins** to create, update, and manage their  events easily.
 
 ---
@@ -30,15 +32,12 @@ The platform enables:
 
 ###  Students
 - Explore various college events.
-- View detailed event descriptions, dates, and registration requirements.
+- View detailed event descriptions and  dates.
 - Register for events directly through the portal.
-- Track participation history and receive event updates or reminders.
 
 ### Admins
 - Create, edit, and manage events hosted by them.
 - Handle event registrations and view participant details.
-- Communicate updates and announcements to registered students.
-
 ---
 
 ##  Scope
@@ -47,7 +46,7 @@ The platform enables:
 - **Backend Framework:** Django (for admin panel and backend logic)
 - **API Development:** Django REST Framework (DRF)
 - **Database:** PostgreSQL (for relational data storage)
-- **Frontend:** HTML, CSS, Bootstrap
+- **Frontend:** React
 - **Authentication:** JWT (JSON Web Token) for secure login and access control
 
 ### 2. Core Features
@@ -62,29 +61,16 @@ The platform enables:
 ##  Authentication System
 
 CampusConnect uses **JWT-based authentication** to ensure a secure login and access management process:
-- **Signup/Login APIs:** Allow users to authenticate using email and password.
+
+- **Signup/Login APIs:** Allow users to authenticate using username and password.
+
 - **Access Token:** Grants temporary access for authorized actions.
+
 - **Refresh Token:** Generates new access tokens without re-login.
+
 - **Role-based permissions:** Ensure that only authorized users can perform admin operations.
 
 This mechanism enhances **data security**, prevents unauthorized actions, and makes API integration seamless across web and mobile platforms.
-
----
-
-##  REST API Integration
-
-The backend provides well-structured RESTful APIs, such as:
-
-| Endpoint | Method | Description |
-|-----------|---------|-------------|
-| `/api/register/` | POST | Register a new user (student or admin) |
-| `/api/login/` | POST | Authenticate user and generate JWT token |
-| `/api/events/` | GET | View all available events |
-| `/api/events/<id>/` | GET | Retrieve event details |
-| `/api/events/` | POST | Create a new event (admin only) |
-| `/api/events/<id>/register/` | POST | Register a student for a specific event |
-
-These APIs can later be consumed by a **mobile app** or **React frontend** for enhanced interactivity.
 
 ---
 
@@ -94,13 +80,11 @@ By the end of this project, the CampusConnect platform will deliver the followin
 
 ### 1. For Students:
 - A single portal to **explore, register, and participate** in events.
-- Access to **event history**, participation records, and notifications.
 - Improved engagement with college communities .
 
 ### 2. For  Admins:
 - A **streamlined system** to manage events, registrations, and attendance.
-- Reduced manual workload and communication chaos.
-- Improved analytics on participation trends.
+- Reduced manual workload and communication gap.
 
 ### 3. For the Institution:
 - Transparent and digitalized event management.
@@ -112,5 +96,3 @@ By the end of this project, the CampusConnect platform will deliver the followin
 ##  Conclusion
 
 **CampusConnect** bridges the gap between students and college  by bringing all event-related activities into one digital ecosystem.  
-Its modular design, secure authentication, and API-driven structure make it a **future-ready platform** capable of scaling across web and mobile environments.
-

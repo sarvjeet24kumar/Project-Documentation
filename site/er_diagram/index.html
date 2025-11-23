@@ -8,9 +8,9 @@
 <link href="../structural_diagram/" rel="prev"/>
 <link href="../signup_test/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.0" name="generator"/>
 <title>ER Diagram - CampusConnect Functional Documentation</title>
-<link href="../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/main.618322db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
@@ -68,7 +68,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="..">
 <span class="md-ellipsis">
+    
+  
     Overview
+  
+
     
   </span>
 </a>
@@ -76,7 +80,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../use_cases/">
 <span class="md-ellipsis">
+    
+  
     Functional Use Cases
+  
+
     
   </span>
 </a>
@@ -84,7 +92,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../business_useCases/">
 <span class="md-ellipsis">
+    
+  
     Business Use Cases
+  
+
     
   </span>
 </a>
@@ -92,7 +104,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../modules/">
 <span class="md-ellipsis">
+    
+  
     Modules
+  
+
     
   </span>
 </a>
@@ -100,7 +116,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../architecture/">
 <span class="md-ellipsis">
-    Architecture
+    
+  
+    High Level Architecture
+  
+
     
   </span>
 </a>
@@ -108,7 +128,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Project_flow/">
 <span class="md-ellipsis">
+    
+  
     Project Flow
+  
+
     
   </span>
 </a>
@@ -116,7 +140,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../DFD/">
 <span class="md-ellipsis">
+    
+  
     DFD
+  
+
     
   </span>
 </a>
@@ -124,7 +152,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../structural_diagram/">
 <span class="md-ellipsis">
+    
+  
     System architecture
+  
+
     
   </span>
 </a>
@@ -133,7 +165,11 @@
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
 <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Database Schema
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -141,14 +177,22 @@
 <nav aria-expanded="true" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_9">
 <span class="md-nav__icon md-icon"></span>
-            Database Schema
+            
+  
+    Database Schema
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
 </a>
@@ -160,7 +204,11 @@
 <input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
 <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
 <span class="md-ellipsis">
+    
+  
     Test Case Documentations
+  
+
     
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -168,13 +216,21 @@
 <nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_10">
 <span class="md-nav__icon md-icon"></span>
-            Test Case Documentations
+            
+  
+    Test Case Documentations
+  
+
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../signup_test/">
 <span class="md-ellipsis">
+    
+  
     Signup Module
+  
+
     
   </span>
 </a>
@@ -182,15 +238,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../login_test/">
 <span class="md-ellipsis">
-    Login Module
     
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../test_plan/">
-<span class="md-ellipsis">
-    Test plan
+  
+    Login Module
+  
+
     
   </span>
 </a>
@@ -231,7 +283,7 @@
         varchar role
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
+
     }
     users_roles{
         int id PK
@@ -239,7 +291,6 @@
         int role_id FK
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
     }
 
     events {
@@ -262,7 +313,6 @@
         int  capacity
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
     }
 
     registrations {
@@ -272,7 +322,6 @@
         enum status
         timestamp created_at
         timestamp updated_at
-        timestamp deleted_at
     }
 
     users ||--o{ events : "creates"
@@ -287,6 +336,7 @@
 </div>
 </article>
 </div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
 </div>
 </main>
@@ -308,8 +358,8 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-<script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
 <script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
 mermaid.initialize({});</script></body>
 </html>

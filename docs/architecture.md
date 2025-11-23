@@ -1,6 +1,5 @@
-# System Architecture & Data Flow
+# 1. High-Level Architecture
 
-## 1. High-Level Architecture
 ```mermaid
 
 flowchart TD
@@ -11,4 +10,3 @@ flowchart TD
     C -->|Register Event| F[Registration API]
     F --> E
 ```
-
