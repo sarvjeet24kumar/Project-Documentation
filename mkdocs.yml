@@ -21,6 +21,9 @@ nav:
   - Test Case Documentations:
       - Signup Module: signup_test.md
       - Login Module: login_test.md
+  - CI/CD Pipeline and Deployment Flow:
+      - Code Merge Workflow: code_merge_workflow.md
+      - Security scanning (SAST, DAST): security_scanning.md
 
 plugins:
   - mermaid2
