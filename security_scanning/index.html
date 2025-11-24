@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../code_merge_workflow/">
+      
       
       
         
@@ -19,7 +21,7 @@
     
     
       
-        <title>Cicd - CampusConnect Functional Documentation</title>
+        <title>Security scanning (SAST, DAST) - CampusConnect Functional Documentation</title>
       
     
     
@@ -59,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#security-scanning-sast-and-dast" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -91,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cicd
+              Security scanning (SAST, DAST)
             
           </span>
         </div>
@@ -552,18 +559,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -584,7 +593,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -627,10 +636,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../security_scanning/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security scanning (SAST, DAST)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -646,6 +682,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-static-application-security-testing-sast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Static Application Security Testing (SAST)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Static Application Security Testing (SAST)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trivy-sast-report-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trivy SAST Report Frontend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trivy-sast-report-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trivy SAST Report Backend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-dynamic-application-security-testing-dast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Dynamic Application Security Testing (DAST)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Dynamic Application Security Testing (DAST)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aikido-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aikido Report
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semgrep-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semgrep Report
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -675,6 +842,127 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-static-application-security-testing-sast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Static Application Security Testing (SAST)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Static Application Security Testing (SAST)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trivy-sast-report-frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trivy SAST Report Frontend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trivy-sast-report-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trivy SAST Report Backend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-dynamic-application-security-testing-dast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Dynamic Application Security Testing (DAST)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Dynamic Application Security Testing (DAST)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aikido-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aikido Report
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#semgrep-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semgrep Report
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -691,9 +979,46 @@
 
 
 
-  <h1>Cicd</h1>
-
-
+<h1 id="security-scanning-sast-and-dast">Security Scanning (SAST and DAST)</h1>
+<h2 id="1-overview">1. Overview</h2>
+<p>Security scanning ensures that the application code and deployed environment are protected from vulnerabilities.<br />
+This process includes two main types of scans:</p>
+<ul>
+<li>SAST (Static Application Security Testing)</li>
+<li>DAST (Dynamic Application Security Testing)</li>
+</ul>
+<p>Both are integrated into the CI/CD pipeline to detect security issues early and continuously.</p>
+<hr />
+<h2 id="2-static-application-security-testing-sast">2. Static Application Security Testing (SAST)</h2>
+<h3 id="purpose">Purpose</h3>
+<p>SAST scans the application's source code without executing it.<br />
+It helps identify vulnerabilities such as:</p>
+<ul>
+<li>SQL injection risks</li>
+<li>Hardcoded secrets</li>
+<li>Unsafe dependencies</li>
+<li>Input validation issues</li>
+<li>Insecure configurations</li>
+</ul>
+<h2 id="trivy-sast-report-frontend">Trivy SAST Report Frontend</h2>
+<p><img alt="SAST Report Frontend" src="../images/FET.png" /></p>
+<h2 id="trivy-sast-report-backend">Trivy SAST Report Backend</h2>
+<p><img alt="SAST Report Frontend" src="../images/BET.png" /></p>
+<h2 id="3-dynamic-application-security-testing-dast">3. Dynamic Application Security Testing (DAST)</h2>
+<h3 id="purpose_1">Purpose</h3>
+<p>DAST scans the running application to detect runtime vulnerabilities.<br />
+It checks for:</p>
+<ul>
+<li>Broken authentication</li>
+<li>Authorization bypass</li>
+<li>Injection flaws</li>
+<li>Security misconfigurations</li>
+<li>Exposed APIs or sensitive data</li>
+</ul>
+<h2 id="aikido-report">Aikido Report</h2>
+<p><img alt="DAST Report" src="../images/Aikido.png" /></p>
+<h2 id="semgrep-report">Semgrep Report</h2>
+<p><img alt="SAST Report Frontend" src="../images/Semgrep.png" /></p>
 
 
 
