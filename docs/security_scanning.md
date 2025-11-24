@@ -8,7 +8,15 @@ This process includes two main types of scans:
 - SAST (Static Application Security Testing)
 - DAST (Dynamic Application Security Testing)
 
-Both are integrated into the CI/CD pipeline to detect security issues early and continuously.
+### Tools used for SAST:
+
+- Trivy
+- Aikido
+- Semgrap
+
+### Tools used for DAST:
+
+- Aikido
 
 ---
 
