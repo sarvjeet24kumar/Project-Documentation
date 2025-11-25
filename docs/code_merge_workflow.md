@@ -73,9 +73,8 @@ flowchart TD
 A["Create Feature Branch (feature/<feature-name>)"] --> B["Implement the Feature (Write code, test, commit)"]
 B --> C["Push Changes to GitHub (git push origin feature/<feature-name>)"]
 C --> D["Create Pull Request (feature → develop)"]
-D --> E["Automated CI Checks (Linting, Unit Tests, Build, SAST/DAST)"]
-E --> F["Code Review (Reviewers request changes or approve)"]
-F --> G["Approval & Merge (Merge PR into develop)"]
-G --> H["Prepare Production Release (Create PR: develop → main)"]
-H --> I["Production Deployment (Main branch triggers CI/CD, Frontend → Vercel, Backend → AWS (ALB → EC2 → RDS))"]
+D --> E["Code Review (Reviewers request changes or approve)"]
+E --> F["Approval & Merge (Merge PR into develop)"]
+F --> G["Prepare Production Release (Create PR: develop → main)"]
+G --> H["Production Deployment (Main branch triggers CI/CD, Frontend → Vercel, Backend → AWS (ALB → EC2 → RDS))"]
 ```
