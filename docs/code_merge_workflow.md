@@ -32,33 +32,23 @@ A pull request is created from:
 
 Developers must include a meaningful description and assign reviewers.
 
-## 5. Automated CI Checks
 
-Once the PR is created, the pipeline runs:
-
-- Linting
-- Unit tests
-- Build verification
-- SAST/DAST (if configured)
-
-All checks must pass before merging.
-
-## 6. Code Review
+## 5. Code Review
 
 Reviewers inspect the code for quality, correctness, security, and performance.  
 Requested changes must be resolved, and the PR must be updated accordingly.
 
-## 7. Approval and Merge
+## 6. Approval and Merge
 
 After approval and successful checks, the PR is merged into the develop branch.
 
-## 8. Prepare for Production Release
+## 7. Prepare for Production Release
 
 When all features for the release cycle are ready, a release PR is created:
 
 - develop to main
 
-## 9. Production Deployment
+## 8. Production Deployment
 
 Merging into the main branch triggers the production CI/CD pipeline:
 
