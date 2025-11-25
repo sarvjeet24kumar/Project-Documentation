@@ -341,46 +341,37 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-automated-ci-checks">
+<a class="md-nav__link" href="#5-code-review">
 <span class="md-ellipsis">
       
-        5. Automated CI Checks
+        5. Code Review
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#6-code-review">
+<a class="md-nav__link" href="#6-approval-and-merge">
 <span class="md-ellipsis">
       
-        6. Code Review
+        6. Approval and Merge
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#7-approval-and-merge">
+<a class="md-nav__link" href="#7-prepare-for-production-release">
 <span class="md-ellipsis">
       
-        7. Approval and Merge
+        7. Prepare for Production Release
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#8-prepare-for-production-release">
+<a class="md-nav__link" href="#8-production-deployment">
 <span class="md-ellipsis">
       
-        8. Prepare for Production Release
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#9-production-deployment">
-<span class="md-ellipsis">
-      
-        9. Production Deployment
+        8. Production Deployment
       
     </span>
 </a>
@@ -463,46 +454,37 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#5-automated-ci-checks">
+<a class="md-nav__link" href="#5-code-review">
 <span class="md-ellipsis">
       
-        5. Automated CI Checks
+        5. Code Review
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#6-code-review">
+<a class="md-nav__link" href="#6-approval-and-merge">
 <span class="md-ellipsis">
       
-        6. Code Review
+        6. Approval and Merge
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#7-approval-and-merge">
+<a class="md-nav__link" href="#7-prepare-for-production-release">
 <span class="md-ellipsis">
       
-        7. Approval and Merge
+        7. Prepare for Production Release
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#8-prepare-for-production-release">
+<a class="md-nav__link" href="#8-production-deployment">
 <span class="md-ellipsis">
       
-        8. Prepare for Production Release
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#9-production-deployment">
-<span class="md-ellipsis">
-      
-        9. Production Deployment
+        8. Production Deployment
       
     </span>
 </a>
@@ -546,26 +528,17 @@
 <li>feature/<feature-name> to develop</feature-name></li>
 </ul>
 <p>Developers must include a meaningful description and assign reviewers.</p>
-<h2 id="5-automated-ci-checks">5. Automated CI Checks</h2>
-<p>Once the PR is created, the pipeline runs:</p>
-<ul>
-<li>Linting</li>
-<li>Unit tests</li>
-<li>Build verification</li>
-<li>SAST/DAST (if configured)</li>
-</ul>
-<p>All checks must pass before merging.</p>
-<h2 id="6-code-review">6. Code Review</h2>
+<h2 id="5-code-review">5. Code Review</h2>
 <p>Reviewers inspect the code for quality, correctness, security, and performance.<br/>
 Requested changes must be resolved, and the PR must be updated accordingly.</p>
-<h2 id="7-approval-and-merge">7. Approval and Merge</h2>
+<h2 id="6-approval-and-merge">6. Approval and Merge</h2>
 <p>After approval and successful checks, the PR is merged into the develop branch.</p>
-<h2 id="8-prepare-for-production-release">8. Prepare for Production Release</h2>
+<h2 id="7-prepare-for-production-release">7. Prepare for Production Release</h2>
 <p>When all features for the release cycle are ready, a release PR is created:</p>
 <ul>
 <li>develop to main</li>
 </ul>
-<h2 id="9-production-deployment">9. Production Deployment</h2>
+<h2 id="8-production-deployment">8. Production Deployment</h2>
 <p>Merging into the main branch triggers the production CI/CD pipeline:</p>
 <ul>
 <li>Frontend deploys via Vercel</li>
